@@ -1,0 +1,22 @@
+server:
+  port: 8888
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 2000
+    max-connections: 20000
+    min-spare-threads: 100
+
+spring:
+  application:
+    name: demo
+
+
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+    type: yaml
+    namespace: dev-server
+
+  discovery:
+    server-addr: 127.0.0.1:8848
+    namespace: dev-server
